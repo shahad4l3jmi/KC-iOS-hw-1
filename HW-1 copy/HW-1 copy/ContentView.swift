@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  1st HW
+//  HW-1 copy
 //
-//  Created by Shhooda on 05/08/2022.
+//  Created by Shhooda on 08/08/2022.
 //
 
 import SwiftUI
@@ -16,7 +16,7 @@ struct ContentView: View {
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFit()
-                .frame(width:1190, height:2000)
+                
            
             Color.white
                 .frame(width:20500, height: 950)
@@ -68,16 +68,18 @@ struct ContentView: View {
                         .scaledToFit()
                         
                     Spacer()
-            
+                    
+                    Image(systemName: "star.fill")
+                        .foregroundColor(.yellow)
+                    Text("5")
+                        .foregroundColor(.white)
+                    
             Text("Enola Holmes")
-            
             
                 .font(Font.custom("American TYpewriter",size:20))
                 .foregroundColor(.white)
                 .padding(.bottom,50)
             
-            Image("systemName: "star.fill")
-                .foregroundColor(.yellow)
             
         }.padding(.bottom)
             .frame(width: 350, height: 140)
@@ -88,10 +90,13 @@ struct ContentView: View {
                 .resizable()
                 .scaledToFit()
             Spacer()
-            Image("systemName:star.fill")
-                .font(.body)
+            
+            
+            Image(systemName: "star.fill")
+                .foregroundColor(.yellow)
+            Text("4.5")
                 .foregroundColor(.white)
-                .padding(.top,50)
+                
             Text("Jujitsu Kaisen 0 ")
                 .font(Font.custom("American TYpewriter",size:20))
                 .foregroundColor(.white)
@@ -104,10 +109,11 @@ struct ContentView: View {
                 .resizable()
                 .scaledToFit()
             Spacer()
-            Text("⭐️⭐️⭐️⭐️⭐️")
-                .font(.body)
+            
+            Image(systemName: "star.fill")
+                .foregroundColor(.yellow)
+            Text("5.5")
                 .foregroundColor(.white)
-                .padding(.top,50)
             Text("Free Guy")
                 .font(Font.custom("American TYpewriter",size:20))
                 .foregroundColor(.white)
@@ -120,10 +126,11 @@ struct ContentView: View {
                 .resizable()
                 .scaledToFit()
             Spacer()
-            Text("⭐️⭐️⭐️⭐️")
-                .font(.body)
+            
+            Image(systemName: "star.fill")
+                .foregroundColor(.yellow)
+            Text("4")
                 .foregroundColor(.white)
-                .padding(.top,50)
             Text("Mary Poppins Returns")
                 .font(Font.custom("American TYpewriter",size:20))
                 .foregroundColor(.white)
@@ -137,10 +144,11 @@ struct ContentView: View {
                 .foregroundColor(Color.white)
                 .scaledToFit()
             Spacer()
-            Text("⭐️⭐️⭐️⭐️⭐️")
-                .font(.body)
+            
+            Image(systemName: "star.fill")
+                .foregroundColor(.yellow)
+            Text("4.5")
                 .foregroundColor(.white)
-                .padding(.top,50)
             Text("Demon Slayer")
                 .font(Font.custom("American TYpewriter",size:20))
                 .foregroundColor(.white)
@@ -154,11 +162,9 @@ struct ContentView: View {
 
 
 
-            
-        
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .previewDevice("iPhone 11 Pro")
     }
 }
